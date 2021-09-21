@@ -1,4 +1,4 @@
-
+//By ADITYA VERMA
 #include <stdio.h>
 #define ll long long int
 
@@ -10,7 +10,6 @@ void copyy(ll a[], ll b[], int n)
     }
 }
 
-ll pre[1000000] = {0},next[1000000] = {0},ans[1000000] = {0};
 int main()
 {
     ll t;
@@ -18,26 +17,27 @@ int main()
 
     while (t--)
     {
-        ll n,pre_size=1,next_size=1,ans_size=1;
+        ll pre[80000] = {0}, next[80000] = {0}, ans[80000] = {0}; // pre==f(n-2)  next==f(n-1)  ans==f(n)
+        ll n, pre_size = 1, next_size = 1, ans_size = 1;
 
         pre[0] = 0;
         next[0] = 1;
 
         ll carry = 0;
-        ll i = 0;   
+        ll i = 0;
         scanf("%lld", &n);
 
-        if (n==0)
+        if (n == 0)
         {
             printf("0\n");
             continue;
         }
-        else if (n==1)
+        else if (n == 1)
         {
             printf("1\n");
             continue;
         }
-        
+
         n--;
         while (n--)
         {
@@ -51,7 +51,7 @@ int main()
             //if no. of digits in next is greatr than that of pre
             while (j)
             {
-                ans[i] = ((next[i] + carry) % 10);
+                ans[i] = (next[i] + carry) % 10;
                 carry = (next[i] + carry) / 10;
                 i++;
                 j--;
