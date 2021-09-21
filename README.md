@@ -1,2 +1,5 @@
-# CS_201
-Mini project on fibonacci number in the range 0-20000 (but it can calulate upto 30000
+# National Institute of Technology Silchar
+### Data Structures (CS 201)
+
+Mini Project-I 
+- C Programe for Large fibonacci Number
