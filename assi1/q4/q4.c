@@ -24,13 +24,10 @@ int main()
     sci(n);
     ll a[n], b[n];
     srand(time(0));
-    ll sta=0;
-    for ( sta = 0; sta < n; sta++)
+    for ( int i = 0; i < n; i++)
     {
-        // sci(a[sta]);
-        a[sta]=rand();
-        // a[sta]=(sta);
-        b[sta] = a[sta];
+        a[i]=rand();
+        b[i] = a[i];
     }
 
     clock_t start1, end1;
