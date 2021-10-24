@@ -3,5 +3,5 @@
 
 This repo contains all the assignments of CS 201
 
-# Aditya Verma (2012113)
-# CSE - B
+### Aditya Verma (2012113)
+### CSE - B
